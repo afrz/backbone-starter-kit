@@ -1,0 +1,20 @@
+/*---- navbar */
+
+@import 'global';
+
+.navbar-brand-image {
+  float:left;
+
+  //fixed size
+  margin: 5px;
+  width :40px;
+  height: 40px;
+
+  transition: transform 2s ease 0s;
+}
+
+.navbar-brand-image:hover {
+
+  transform: rotate(333deg);
+  cursor: pointer;
+}

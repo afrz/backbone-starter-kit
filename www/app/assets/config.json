@@ -1,0 +1,9 @@
+{
+  "config": {
+    "webAPI": "./api",
+    "instance": {
+      "code": "NONE",
+      "lock": true
+    }
+  }
+}

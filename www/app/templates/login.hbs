@@ -1,0 +1,31 @@
+<div class="login-box">
+  <!-- modal dialog box -->
+  <div class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title text-primary"><span class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>&nbsp;Login</h2>
+        </div>
+        <div class="modal-body">
+          <form class="form-signin" novalidate>
+            <label for="login" class="sr-only">Identifiant</label>
+            <input type="text" id="login" class="form-control" placeholder="Identifiant" required>
+            <label for="password" class="sr-only">Mot de passe</label>
+            <input type="password" id="password" class="form-control" placeholder="Mot de passe" required>
+            <select class="form-control" id="server">
+              <% _.each(instances, function(instance) {
+                var select = current === instance.Id ? 'selected' : '';
+               %>
+                <option value="<%-instance.Id%>" <%-select%>><%-instance.DisplayLabel%></option>
+              <% }); %>
+            </select>
+            <button id="auth" class="btn btn-lg btn-primary btn-block" type="button" tabindex="-1">Authentification</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <h4><span id="hint" class="label label-danger center-block"></span></h4>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>

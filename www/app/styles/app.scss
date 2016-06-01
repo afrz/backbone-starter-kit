@@ -1,0 +1,26 @@
+/*---- app global */
+
+@import 'global';
+
+.app-body {
+
+  padding-top: $app_padding_top;
+  background-color: $app_color_back;
+}
+
+.alert {
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  z-index: 2000;
+
+  width: 30%;
+
+  //responsive designs
+  @media only screen and (max-width: 768px) {
+
+    width: 90%;
+  }
+}

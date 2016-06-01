@@ -1,0 +1,25 @@
+{
+  "name": "WebSite",
+  "description": "Web App Starter Kit",
+  "private": true,
+  "devDependencies": {
+    "auto-reload-brunch": "^1.8.1",
+    "clean-css-brunch": "^1.8.0",
+    "css-brunch": "^1.7.0",
+    "digest-brunch": "^1.5.1",
+    "javascript-brunch": "^1.8.0",
+    "sass-brunch": "^1.9.2",
+    "uglify-js-brunch": "^1.7.8",
+    "underscore-brunch": "^1.4.0"
+  },
+  "jshintConfig": {
+    "node": true,
+    "browser": true,
+    "jquery": "$",
+    "globals": {
+      "_": false,
+      "Backbone": false,
+      "moment": false
+    }
+  }
+}

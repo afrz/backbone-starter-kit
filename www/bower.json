@@ -1,0 +1,35 @@
+{
+  "name": "WebSite",
+  "version": "0.1.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.3",
+    "underscore": "~1.8.3",
+    "backbone": "~1.2.3",
+    "layoutmanager": "~0.9.7",
+    "moment": "~2.10.6",
+    "SpinKit": "spinkit#~1.2.2"
+  },
+  "overrides": {
+    "backbone": {
+      "dependencies": {
+        "jquery": "*",
+        "underscore": "*"
+      }
+    },
+    "moment": {
+      "main": [
+        "moment.js",
+        "locale/fr.js"
+      ]
+    },
+    "SpinKit": {
+      "main": "-"
+    }
+  }
+}

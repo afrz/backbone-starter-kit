@@ -1,0 +1,15 @@
+/*---- wait */
+
+@import 'global';
+
+$spinkit-spinner-color: $app_color;
+
+@import 'bower_components/spinkit/scss/spinners/7-three-bounce';
+
+.wait {
+
+  .sk-child {
+
+    border-radius: 4px;
+  }
+}
